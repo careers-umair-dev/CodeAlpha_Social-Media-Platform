@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="MiniSocial: share moments, follow people and join the conversation.">
+  <title>Create account · MiniSocial</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="js/theme-init.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-body">
+  <div class="auth">
+    <aside class="auth-hero" aria-hidden="false">
+      <a class="brand brand-light" href="index.html"><span class="brand-mark"><img src="favicon.svg" alt="" width="40" height="40"></span><span class="brand-name">MiniSocial</span></a>
+      <div class="hero-copy"><h2>Share moments.<br>Follow people you care about.</h2><ul class="hero-points"><li><span class="tick"></span>Post text and photos in seconds</li><li><span class="tick"></span>Get notified when people react</li><li><span class="tick"></span>Save what you love for later</li></ul></div>
+      <p class="hero-foot">Light and dark themes · Works on every screen</p>
+      <span class="orb o1"></span><span class="orb o2"></span>
+    </aside>
+    <main class="auth-main" id="main">
+      <div class="auth-card">
+        <a class="brand auth-brand-mobile" href="index.html"><span class="brand-mark"><img src="favicon.svg" alt="" width="34" height="34"></span><span class="brand-name">MiniSocial</span></a>
+        <h1>Create your account</h1>
+        <p class="auth-sub">It takes less than a minute.</p>
+        <form id="register-form" class="form" novalidate>
+          <p class="form-alert hidden" role="alert"></p>
+          <div class="field"><label for="name">Full name</label><input id="name" name="name" type="text" autocomplete="name" maxlength="50" autofocus><p class="field-error" data-error-for="name" role="alert"></p></div>
+          <div class="field-row">
+            <div class="field"><label for="username">Username</label><input id="username" name="username" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" maxlength="30"><p class="field-error" data-error-for="username" role="alert"></p></div>
+            <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" spellcheck="false"><p class="field-error" data-error-for="email" role="alert"></p></div>
+          </div>
+          <div class="field"><label for="password">Password</label><div class="input-wrap"><input id="password" name="password" type="password" autocomplete="new-password" aria-describedby="pw-help"><button class="pw-toggle" type="button" data-toggle-pw="password" aria-label="Show password" aria-pressed="false"></button></div>
+            <div class="meter" aria-hidden="true"><span></span></div><p class="hint" id="pw-help"><span id="pw-label"></span> At least 8 characters with a letter and a number.</p><p class="field-error" data-error-for="password" role="alert"></p></div>
+          <div class="field"><label for="confirmPassword">Confirm password</label><div class="input-wrap"><input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password"><button class="pw-toggle" type="button" data-toggle-pw="confirmPassword" aria-label="Show password" aria-pressed="false"></button></div><p class="field-error" data-error-for="confirmPassword" role="alert"></p></div>
+          <button class="btn btn-primary btn-lg btn-block" type="submit" data-label="Create account"><span>Create account</span></button>
+        </form>
+        <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+        <button class="btn btn-ghost btn-sm auth-theme" type="button" id="auth-theme" aria-label="Toggle dark mode"></button>
+      </div>
+    </main>
+  </div>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/auth-theme.js"></script>
+</body>
+</html>

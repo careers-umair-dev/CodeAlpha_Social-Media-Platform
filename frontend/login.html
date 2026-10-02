@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="MiniSocial: share moments, follow people and join the conversation.">
+  <title>Log in · MiniSocial</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <script src="js/theme-init.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-body">
+  <div class="auth">
+    <aside class="auth-hero" aria-hidden="false">
+      <a class="brand brand-light" href="index.html"><span class="brand-mark"><img src="favicon.svg" alt="" width="40" height="40"></span><span class="brand-name">MiniSocial</span></a>
+      <div class="hero-copy"><h2>Share moments.<br>Follow people you care about.</h2><ul class="hero-points"><li><span class="tick"></span>Post text and photos in seconds</li><li><span class="tick"></span>Get notified when people react</li><li><span class="tick"></span>Save what you love for later</li></ul></div>
+      <p class="hero-foot">Light and dark themes · Works on every screen</p>
+      <span class="orb o1"></span><span class="orb o2"></span>
+    </aside>
+    <main class="auth-main" id="main">
+      <div class="auth-card">
+        <a class="brand auth-brand-mobile" href="index.html"><span class="brand-mark"><img src="favicon.svg" alt="" width="34" height="34"></span><span class="brand-name">MiniSocial</span></a>
+        <h1>Welcome back</h1>
+        <p class="auth-sub">Log in to see what’s new.</p>
+        <form id="login-form" class="form" novalidate>
+          <p class="form-alert hidden" role="alert"></p>
+          <div class="field"><label for="emailOrUsername">Email or username</label><input id="emailOrUsername" name="emailOrUsername" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" autofocus><p class="field-error" data-error-for="emailOrUsername" role="alert"></p></div>
+          <div class="field"><label for="password">Password</label><div class="input-wrap"><input id="password" name="password" type="password" autocomplete="current-password"><button class="pw-toggle" type="button" data-toggle-pw="password" aria-label="Show password" aria-pressed="false"></button></div><p class="field-error" data-error-for="password" role="alert"></p></div>
+          <button class="btn btn-primary btn-lg btn-block" type="submit" data-label="Log in"><span>Log in</span></button>
+        </form>
+        <p class="auth-switch">New here? <a href="register.html">Create an account</a></p>
+        <button class="btn btn-ghost btn-sm auth-theme" type="button" id="auth-theme" aria-label="Toggle dark mode"></button>
+      </div>
+    </main>
+  </div>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/auth-theme.js"></script>
+</body>
+</html>
